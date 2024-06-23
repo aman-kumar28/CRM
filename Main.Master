@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MasterPageDemo.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/style.css" rel="stylesheet" />    
+    <script src="js/script.js"></script>
+</head>
+<body onload="moveslider()">
+    <form id="form1" runat="server">
+       <div id="outer">
+           <div id="header">
+               <div id="logo">
+                   <img src="images/logo.jpg" width="150" height="150">
+               </div>
+               <div id="banner">
+                   MARC Laboratries Pvt.Ltd.
+               </div>
+           </div>
+           <div id="menu">
+               <ul>
+                   <li><a href="Index.aspx">Home</a></li>
+                    <li><a href="About Us.aspx">About Us</a></li>
+                    <li><a href="Registraion.aspx">Registraion</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="Contact Us.aspx">Contact Us</a></li>
+               </ul>
+           </div>
+           <div id="slider">
+             <img id="slide" width="1000" height="250"/>
+           </div>
+           <div id="main">
+               <div id="left"></div>
+               <div id="right">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+      </asp:ContentPlaceHolder>
+               </div>
+           </div>
+           <div id="footer">
+               <div id="lfooter">
+                   Copyright &#169; To Marc Lab
+               </div>
+                <div id="rfooter">
+                   Desgine & Devloped By:<span style="color:aquamarine">Aman Kumar</span>
+                </div>
+           </div>
+      </div>
+    </form>
+</body>
+</html>
